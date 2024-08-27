@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-preto: #000000;
+    --font-principal: "Inter", sans-serif;
+    --cor-laranja-principal: #E4722D;
+    --cor-branco: #FFFFFF;
+}
+
+body {
+    background-color: var(--cor-preto);
+}
+
+.conteudo {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-entrada {
+    margin-right: 2%;
+}
+
+#entrada-texto {
+    width: 50vw;
+    height: 70vh;
+    resize: none;
+    border: 2px solid var(--cor-laranja-principal);
+    border-radius: 1em;
+    outline: none;
+    background-color: var(--cor-preto);
+    caret-color: var(--cor-laranja-principal);
+    color: var(--cor-laranja-principal);
+}
+
+#saida-texto {
+    width: 30vw;
+    height: 70vh;
+    resize: none;
+    border: 2px solid var(--cor-laranja-principal);
+    border-radius: 1em;
+    outline: none;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+#entrada-texto::placeholder {
+    color: var(--cor-laranja-principal);
+    text-align: center;
+    font-size: 2em;
+}
+
+#saida-texto::placeholder{
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 2em;
+}
+
+.area-botao {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#criptografar {
+    font-family: var(--font-principal);
+    padding: 1.5em;
+    margin-right: 10%;
+    width: 30%;
+    background-color: var(--cor-laranja-principal);
+    border-color: var(--cor-preto);
+    font-weight: bold;
+    border-radius: 1em;
+    color: var(--cor-branco);
+}
+
+#descriptografar {
+    font-family: var(--font-principal);
+    width: 30%;
+    background-color: var(--cor-preto);
+    border-color: var(--cor-laranja-principal);
+    color: var(--cor-laranja-principal);
+    font-weight: bold;
+    border-radius: 1em;
+}
+
+#criptografar:hover {
+    border-color: var(--cor-branco);
+}
+
+#descriptografar:hover {
+    border-color: var(--cor-branco);
+}
